@@ -1,0 +1,50 @@
+Data:
+  FileSystem: flatfile
+  MySQL:
+    database: minecraft
+    username: user
+    password: pass
+    ip: localhost
+    port: 3306
+Config:
+  UsePermissions: true
+  MultipleBackpacksInInventory:
+    average: false
+    add: true
+Backpacks:
+  exampleBackpack:
+    Size: 18
+    addGlow: true
+    OpenWith: right_click
+    Purchasable: true
+    Price: 2000
+    UseRecipe: true
+    Override: '0'
+    Recipe:
+      - '334,334,334'
+      - '334,35:12,334'
+      - '334,334,334'
+    BackpackItem:
+      id: '54'
+      name: '&aBackpack'
+      lore:
+        - '&cA container for carrying items.'
+        - '&cTheres a lot of space inside.'
+    UseWhitelist: false
+    ItemWhitelist: []
+    ItemBlacklist:
+      - 'exampleBackpack'
+      - '276:all'
+    onDeath:
+      dropContents: true
+      destroyContents: true
+      dropBackpack: false
+      keepBackpack: false
+    WalkSpeedFeature:
+      enabled: true
+      walkingSpeed: 0.19
+    IncreasedHungerFeature:
+      enabled: true
+      extraHungerBarsToDeplete: 1
+      hungerBarsToSubtractWhenEating: 0
+    

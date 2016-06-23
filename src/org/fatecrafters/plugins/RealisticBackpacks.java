@@ -31,7 +31,7 @@ import org.fatecrafters.plugins.listeners.CraftListener;
 import org.fatecrafters.plugins.listeners.EntityListener;
 import org.fatecrafters.plugins.listeners.InventoryListener;
 import org.fatecrafters.plugins.listeners.PlayerListener;
-import org.fatecrafters.plugins.metrics.MetricsLite;
+//import org.fatecrafters.plugins.metrics.MetricsLite;
 import org.fatecrafters.plugins.util.MysqlFunctions;
 import org.fatecrafters.plugins.util.RBUtil;
 import org.fatecrafters.plugins.util.Serialization;
@@ -91,12 +91,14 @@ public class RealisticBackpacks extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+            /*
 		try {
 			final MetricsLite metrics = new MetricsLite(this);
 			metrics.start();
 		} catch (final IOException e) {
 			getLogger().severe("Metrics failed to work.");
 		}
+*/
 		final String p = getServer().getClass().getPackage().getName();
 		final String version = p.substring(p.lastIndexOf('.') + 1);
 		try {
